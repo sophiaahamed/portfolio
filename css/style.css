@@ -205,7 +205,7 @@ body {
     text-align: center !important;
     width: 100%;
     left: 0;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 25px;
     font-size: 13px;
     font-weight: 300;
@@ -232,7 +232,7 @@ body {
 .headline > h2 {
     font-family: 'Playfair Display', georgia, serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 44px;
     line-height: normal;
 }
