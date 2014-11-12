@@ -181,3 +181,13 @@ ul {
 
 /* Styles Start Here */
 
+.top {
+    width: 100%;
+    z-index:9998;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 28px !important;
+}
