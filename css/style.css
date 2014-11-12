@@ -181,6 +181,10 @@ ul {
 
 /* Styles Start Here */
 
+body {
+    font-family: 'Open Sans', sans-seif;
+}
+
 .top {
     width: 100%;
     z-index:9998;
@@ -190,4 +194,45 @@ ul {
     width: 100%;
     max-width: 100%;
     padding: 20px 28px !important;
+}
+
+.logo  {
+    z-index: 10;
+    position: absolute;
+}
+
+.navigation {
+    text-align: center !important;
+    width: 100%;
+    left: 0;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.links > li {
+    float: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    color: #888;
+}
+
+.links > li:hover {
+    cursor: pointer;
+    color: #3d5a66;  
+}
+
+.headline {
+    margin-left: -10px;
+    padding: 144px 122px;
+    margin-top: 40px;
+}
+
+.headline > h2 {
+    font-family: 'Playfair Display', georgia, serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 44px;
+    line-height: normal;
 }
