@@ -233,11 +233,28 @@ body {
     font-family: 'Halant', georgia, serif;
     font-weight: 300;
     font-size: 30px;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     line-height: 1.5em;
     opacity: 0.7;
 }
 
 .headline > p {
-  font-family: 'Open Sans', sans-seif;
+  font-family: 'Open Sans', verdana, sans-seif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px; 
+}
+
+.headline a:hover {
+  color: #3d5a66;
+  cursor: pointer;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.headline a {
+  cursor: pointer;
+  color: #3d5a66;
+  font-style: italic;
+  text-decoration: none;
 }
