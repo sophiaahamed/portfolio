@@ -183,6 +183,7 @@ ul {
 
 body {
     font-family: 'Open Sans', sans-seif;
+
 }
 
 .top {
@@ -273,3 +274,9 @@ body {
   z-index: 0;
 }
 
+.item-one {
+  background-color: #1b1f20 !important;
+  opacity: 0.55;
+  background: url('img/effect.png');
+  background-repeat: repeat;
+}
