@@ -189,6 +189,8 @@ body {
 .top {
     width: 100%;
     z-index:9998;
+    position:fixed;
+    background-color: white;
 }
 
 .container {
@@ -227,7 +229,7 @@ body {
 .headline {
     margin-left: -10px;
     padding: 144px 122px;
-    margin-top: 40px;
+    margin-top: 85px;
 }
 
 .headline > h2 {
@@ -274,7 +276,7 @@ body {
   z-index: 0;
 }
 
-.item-one {
+.item-one .img-one {
   background-color: #1b1f20 !important;
   opacity: 0.55;
   background: url('img/effect.png');
