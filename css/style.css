@@ -258,3 +258,18 @@ body {
   font-style: italic;
   text-decoration: none;
 }
+
+.work {
+  margin-left: -122px;
+  height: 732px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item-one {
+  position: absolute;
+  left: 0;
+  top:0;
+  z-index: 0;
+}
+
