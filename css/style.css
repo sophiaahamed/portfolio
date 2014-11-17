@@ -194,7 +194,7 @@ ul {
 
 body {
     font-family: 'Open Sans', sans-seif;
-  
+  margin:0 auto;
 
 }
 
@@ -282,12 +282,18 @@ body {
   position: relative;
   cursor: pointer;
   max-width: 100%;
-  
-  
-  
+
 }
 
-.work-item.style-3 {
+/* Width of the left 6 col grid did not fill the entire container there was still room.. so to fill that room the width was increased by 2.8% */
+
+
+.portfolio-items, .portfolio-items-two {
+  width:  102.8%;
+}
+
+
+.work-item, .style-3 {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -295,14 +301,11 @@ body {
   cursor: pointer;
   width: 100%;
   max-width: 100%;
-}
-
-.work-item {
   text-align: center;
-  position: absolute;
   padding-top: 138px;
-  z-index:0;
+
 }
+/* Porfolio Description */
 
 .work-item h2 {
   position: relative;
@@ -316,16 +319,10 @@ body {
 
 }
 
-.work-item {
-  background-image: url(http://i58.tinypic.com/27y7ii9.jpg);
-  width:100%;
-  height:400px;
-  background-position:center;
-}
-
 .work-item p {
   font-family: 'Halant',georgia,serif;
   color:white;
+  position:relative;
   
 }
 
@@ -335,6 +332,17 @@ body {
   color:white;
 }
 
+/* Portfolio Image Background */
+
+.work-item {
+  background-image: url(http://i58.tinypic.com/27y7ii9.jpg);
+  width:100%;
+  height:400px;
+  background-position:center;
+}
+
+
+/* Setting the overlay and hover for the html image */
 
 .tester {
  height:400px;
@@ -361,4 +369,6 @@ body {
   height:400px;
 
 }
+
+
 
