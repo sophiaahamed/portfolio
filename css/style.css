@@ -197,6 +197,7 @@ body {
     sans-seif;
 
 
+
 }
 
 .top {
@@ -204,12 +205,18 @@ body {
     z-index:9998;
     position:fixed;
     background-color: white;
+    position: fixed;
+    top:0;
+    left: 0;
+
+
 }
 
 .container {
     width: 100%;
     max-width: 100%;
     padding: 20px 28px !important;
+
 }
 
 .logo  {
@@ -243,6 +250,7 @@ body {
     margin-left: -10px;
     padding: 144px 122px;
     margin-top: 90px;
+
 }
 
 .headline > h2 {
