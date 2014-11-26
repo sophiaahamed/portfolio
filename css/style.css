@@ -195,7 +195,7 @@ ul {
 body {
     font-family: 'Open Sans', 
     sans-seif;
-
+background-color:#111;
 
 
 }
@@ -238,12 +238,12 @@ body {
     float: none;
     display: inline-block;
     padding: 0px 20px 0px 20px;
-    color: #888;
+    color: #a99484;
 }
 
 .links > li:hover {
     cursor: pointer;
-    color: #3d5a66;  
+    color: #a99484;  
 }
 
 .headline {
@@ -260,6 +260,7 @@ body {
     margin-bottom: 30px;
     line-height: 1.5em;
     opacity: 0.7;
+  color:white;
 }
 
 .headline > p {
@@ -267,11 +268,12 @@ body {
   sans-seif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 24px; 
+  line-height: 24px;
+  color:white;
 }
 
 .headline a:hover {
-  color: #3d5a66;
+  color: #a99484;
   cursor: pointer;
   font-style: italic;
   text-decoration: none;
@@ -279,15 +281,16 @@ body {
 
 .headline a {
   cursor: pointer;
-  color: #3d5a66;
+  color: #a99484;
   font-style: italic;
   text-decoration: none;
 }
 
-/* Styles for Portfolio image one */
+/* Styles for Portfolio image one Height determins
+the size of the colum (column contains 2 images )*/
 
 .work {
-  height: 732px;
+  height:;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -298,12 +301,17 @@ body {
 /* Width of the left 6 col grid did not 
 fill the entire container there was 
 still room.. so to fill that room the 
-width was increased by 2.8% */
-
+width was increased by 2.8% 
+---
+height 732px helps keep the right container (specifically bottom right)
+at the specified height so that the scroll bar at the top fits nicely with all images. Width helps the images expand to the edge of the page.*/
 
 .portfolio-items, 
 .portfolio-items-two {
-  width:  102.8%;
+  width:  103.1%;
+  overflow:hidden;
+  height:800px;
+  cursor: pointer;
 }
 
 
@@ -351,10 +359,11 @@ width was increased by 2.8% */
 
 .work-item {
   background-image: 
-  url(http://i58.tinypic.com/27y7ii9.jpg);
+  url(http://i62.tinypic.com/33vzz7r.jpg);
   width:100%;
   height:400px;
   background-position:center;
+  background-size:cover;
 }
 
 
@@ -364,7 +373,6 @@ html image */
 .tester {
  height:400px;
  width:100%;
- position:relative;
  opacity:.2;
  
 }
@@ -377,29 +385,283 @@ html image */
   
 }
 
+
 /* Styles for second portfolio image */
 
-
-.items-two {
+.items-two, .items-three {
   width:100%;
   overflow:hidden;
   height:400px;
+  position:absolute;
+
 
 }
 
 /* New Code Copy and Paste from here */
 
+
 /* Portfolio Image-2 */
 
 .items-two {
   background-image: 
-  url(http://i58.tinypic.com/27y7ii9.jpg);
-  width:100.2%;
+  url(http://i57.tinypic.com/erzxnm.jpg);
+  width:100%;
   height:400px;
   background-position:center;
+  background-size:cover;
+
+}
+
+/* Position relative Keeps the background image located in 
+.portfolio-items-two to take up the full width of the div
+as well as keeping the image fixed with a no-repeat effect. */
+
+
+.portfolio-items-two{
+  position:relative;
+  cursor:pointer;
+  
+}
+
+/* This positions the headline and paragraph text on top
+of the image but underneith the overlay pattern (found in the html) */
+
+
+.items-two {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 138px;
+
+}
+
+/* Styles for Heading and pharagraph text */
+
+.items-two h2 {
+  position: relative;
+  font-family: 'Open Sans',verdana,
+  sans-seif;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  width: 100%;
+  padding-bottom: 12px;
+
+}
+
+.items-two p {
+ font-family: 'Halant',georgia,serif;
+  color:white;
+  position:relative;
+   
+}
+
+a {
+  text-decoration:none;
+}
+
+/* Start of third section, bottom row */
+
+/* Positioning heading and paragraph information */
+
+.items-three, .items-four {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  cursor: pointer;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-top:138px;
+
+
+}
+
+.items-three {
+  background-image: 
+  url(http://i60.tinypic.com/33dw7pv.jpg);
+  width:100%;
+  height:400px;
+  background-position:center;
+  background-size:cover;
+  top: 400px;
+  
+
+
+}
+
+
+/* Styling of heading and paragraph tags */
+
+.item-three h2 {
+  position: relative;
+  font-family: 'Open Sans',verdana,
+  sans-seif;
+  color: red;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  width: 100%;
+  padding-bottom: 12px; 
+}
+
+.items-three p {
+  font-family: 'Halant',georgia,serif;
+  color:white;
+}
+
+/* Start of Fourth image section */
+
+.items-four h2 {
+  position: relative;
+  font-family: 'Open Sans',verdana,
+  sans-seif;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  width: 100%;
+  padding-bottom: 12px;
+
+}
+
+.items-four p {
+  font-family: 'Halant',georgia,serif;
+  color:white;
+  position:relative;
 }
 
 
 
+/* Fourth Portfolio Image */
+
+.items-four {
+  background-image: 
+  url(http://i60.tinypic.com/5pqwoz.jpg);
+  width:100%;
+  height:400px;
+  background-position:center;
+  background-size:cover;
+  top: 400px;
+
+}
+
+/* Work Banner/Contact - Placed above Portfolio Images */
+
+.banner {
+  background-color:#fff;
+  padding: 80px;
+  width:100%;
+  max-width:100%;
+}
+
+
+.contact-info li {
+  display:inline-block;
+  padding-left: 97px;
+  max-width:100%;
+  
+ 
+}
+
+.contact-info h5 {
+  font-family:'Open Sans',Helvetica,sans-serif;
+  font-weight:300;
+  color:black;
+  line-height:20px;
+  font-size:14px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  font-family:'Halant',georgia,serif;
+}
+
+.contact-info a {
+  color:#a99484;
+}
+
+.view-more {
+  padding:20px;
+  background-color:white;
+}
+.view-more h5 {
+  text-align: center;
+  color:#a99484;
+}
+
+.view-more a {
+  color:#a99484;
+}
+
+/* About Info */
+
+.about, .about-info {
+  background-color:#111;
+  
+
+
+}
+
+.about-info {
+  margin-left:30px;
+    padding: 80px 80px;
+    margin-top: 55px;
+}
+
+
+.about-info h2 {
+  color:white;
+  margin-bottom: 30px;
+  font-family:'Halant',georgia,serif;
+  font-size:30px;
+  font-weight:300;
+  line-height:1.2em;
+  opacity:0.7;
+ 
+}
+
+.about-info p {
+  color:white;
+  font-family:'Open Sans',helvetica,sans-serif;
+  font-weight:300;
+  line-height:24px; 
+  margin-bottom:30px;
+}
+
+/* Addition of a horizontle line */
+.press > hr {
+  margin-top:30px;
+  border:0px;
+  border-top:5px solid #a99484;
+  width:16%;
+  margin-left:1px;
+
+}
+
+/* press list items */
+.type h5 {
+  margin-bottom:5px;
+  
+}
+.list-one li {
+  color:white;
+  line-height:22px;
+  font-size:14px;
+  font-weight:300;
+}
+
+.type {
+  color:white;
+   font-size:14px;
+  padding-bottom:0px;
+}
 
 
